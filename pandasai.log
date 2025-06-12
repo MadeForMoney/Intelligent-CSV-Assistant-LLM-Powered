@@ -20675,3 +20675,958 @@ Traceback (most recent call last):
 NameError: name 'KeyError' is not defined
 
 2025-06-11 21:16:50 [ERROR] Pipeline failed on step 6: name 'KeyError' is not defined
+2025-06-12 12:48:34 [INFO] Question: Create a bar chart to visualize the recomended column.
+2025-06-12 12:48:34 [INFO] Running PandasAI with langchain_chat-google-generative-ai LLM...
+2025-06-12 12:48:34 [INFO] Prompt ID: d22d37ec-8548-4055-bfa0-46a66996911a
+2025-06-12 12:48:34 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-06-12 12:48:35 [INFO] Executing Step 0: ValidatePipelineInput
+2025-06-12 12:48:35 [INFO] Executing Step 1: CacheLookup
+2025-06-12 12:48:35 [INFO] Executing Step 2: PromptGeneration
+2025-06-12 12:48:35 [INFO] Using prompt: <dataframe>
+dfs[0]:1000x10
+Unnamed: 0,ground_star,value_for,recommended,ratings,flight_path,reviews_new,sentiment,source,destination
+261,3.0,2,No,7,Mahe to Stockholm via London,"  Check in was so slow, no self check in and bag drop. Boarding was ok, flight totally full. Booked row 9 which was ok. Some space in overhead bins. Seat and legroom ok. Cabin crew ok, smiled, gave out the bottle of water and pretzels. Flight itself was ok, landed 25 mins early and then waited 30 minutes for a stand and ground crew. Bags came off reasonably quickly. BA still seems to believe it is something special, a premium carrier. The reality is that it is not. The only reason we flew BA was we got virtually free tickets because both flights were cancelled last year. BA is our carrier of last choice.",positive,Jersey ,
+207,1.0,1,yes,10,Faro to Gatwick,"  I booked my honeymoon flight from San Diego to Barcelona in September 2020. I have since needed to cancel this flight due to the pandemic and the uncertainty of travel, especially to other countries. I was able to change my flight at no cost, which is great. However, this is my honeymoon and I paid in advance for seats to ensure I sat next to my would be wife. This was more than $1,000 in additional cost. The response I received from British Airways is that it does not matter the reason, unless they cancel the flight, no refund or voucher is available. I then asked if I wanted to make sure I sat next to my would be wife, they expected me to pay again? The answer was yes. I'm very disappointed in the response from them during a global pandemic, where travel is not safe and we have no idea when it will be safe again.",,Venice ,Accra
+800,,5,No,1,,"  I take comfort in reading the last ten or so reviews to see I'm not the only traveller to put in words, how absolutely abysmal British Airways are! The only reason we are stuck using this awful airline is to use up points. We booked Club Europe months ago. London to Athens, sat in row 3 and told they had run out of food options, only choice was lentil pie or green curry. Returning Athens to London Club Europe. Couldn't check in online as promised so arrived at the airport 3hrs early. To be told they had overbooked the flight and basically we were being 'bumped' to economy. This airline fails to deliver time and time again. It is a national disgrace and I implore everyone to choose an alternative. ",negative,,Vegas
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Create a bar chart to visualize the recomended column.
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-06-12 12:48:35 [INFO] Executing Step 3: CodeGenerator
+2025-06-12 12:48:37 [INFO] Prompt used:
+            
+<dataframe>
+dfs[0]:1000x10
+Unnamed: 0,ground_star,value_for,recommended,ratings,flight_path,reviews_new,sentiment,source,destination
+261,3.0,2,No,7,Mahe to Stockholm via London,"  Check in was so slow, no self check in and bag drop. Boarding was ok, flight totally full. Booked row 9 which was ok. Some space in overhead bins. Seat and legroom ok. Cabin crew ok, smiled, gave out the bottle of water and pretzels. Flight itself was ok, landed 25 mins early and then waited 30 minutes for a stand and ground crew. Bags came off reasonably quickly. BA still seems to believe it is something special, a premium carrier. The reality is that it is not. The only reason we flew BA was we got virtually free tickets because both flights were cancelled last year. BA is our carrier of last choice.",positive,Jersey ,
+207,1.0,1,yes,10,Faro to Gatwick,"  I booked my honeymoon flight from San Diego to Barcelona in September 2020. I have since needed to cancel this flight due to the pandemic and the uncertainty of travel, especially to other countries. I was able to change my flight at no cost, which is great. However, this is my honeymoon and I paid in advance for seats to ensure I sat next to my would be wife. This was more than $1,000 in additional cost. The response I received from British Airways is that it does not matter the reason, unless they cancel the flight, no refund or voucher is available. I then asked if I wanted to make sure I sat next to my would be wife, they expected me to pay again? The answer was yes. I'm very disappointed in the response from them during a global pandemic, where travel is not safe and we have no idea when it will be safe again.",,Venice ,Accra
+800,,5,No,1,,"  I take comfort in reading the last ten or so reviews to see I'm not the only traveller to put in words, how absolutely abysmal British Airways are! The only reason we are stuck using this awful airline is to use up points. We booked Club Europe months ago. London to Athens, sat in row 3 and told they had run out of food options, only choice was lentil pie or green curry. Returning Athens to London Club Europe. Couldn't check in online as promised so arrived at the airport 3hrs early. To be told they had overbooked the flight and basically we were being 'bumped' to economy. This airline fails to deliver time and time again. It is a national disgrace and I implore everyone to choose an alternative. ",negative,,Vegas
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Create a bar chart to visualize the recomended column.
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2025-06-12 12:48:37 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Write code here
+df = dfs[0]
+recommended_counts = df['recommended'].value_counts()
+
+plt.figure(figsize=(8, 6))
+recommended_counts.plot(kind='bar')
+plt.title('Distribution of Recommended Flights')
+plt.xlabel('Recommended (yes/No)')
+plt.ylabel('Count')
+plt.xticks(rotation=0)
+plt.savefig('recommended_chart.png')
+
+# Declare result var: 
+result = { "type": "plot", "value": "recommended_chart.png" }
+            ```
+            
+2025-06-12 12:48:37 [INFO] Executing Step 4: CachePopulation
+2025-06-12 12:48:37 [INFO] Executing Step 5: CodeCleaning
+2025-06-12 12:48:37 [INFO] Saving charts to C:\Projects\Pandas AI\exports\charts\temp_chart.png
+2025-06-12 12:48:37 [INFO] 
+Code running:
+```
+df = dfs[0]
+recommended_counts = df['recommended'].value_counts()
+plt.figure(figsize=(8, 6))
+recommended_counts.plot(kind='bar')
+plt.title('Distribution of Recommended Flights')
+plt.xlabel('Recommended (yes/No)')
+plt.ylabel('Count')
+plt.xticks(rotation=0)
+plt.savefig('C:/Projects/Pandas AI/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': 'C:/Projects/Pandas AI/exports/charts/temp_chart.png'}
+        ```
+2025-06-12 12:48:37 [INFO] Executing Step 6: CodeExecution
+2025-06-12 12:48:37 [ERROR] Failed with error: Traceback (most recent call last):
+  File "C:\Users\amnit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 97, in execute
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Value type <class 'str'> must match with type plot
+
+2025-06-12 12:48:37 [WARNING] Failed to execute code retrying with a correction framework [retry number: 1]
+2025-06-12 12:48:37 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2025-06-12 12:48:37 [INFO] Executing Step 0: ErrorPromptGeneration
+2025-06-12 12:48:37 [INFO] Using prompt: <dataframe>
+dfs[0]:1000x10
+Unnamed: 0,ground_star,value_for,recommended,ratings,flight_path,reviews_new,sentiment,source,destination
+261,3.0,2,No,7,Mahe to Stockholm via London,"  Check in was so slow, no self check in and bag drop. Boarding was ok, flight totally full. Booked row 9 which was ok. Some space in overhead bins. Seat and legroom ok. Cabin crew ok, smiled, gave out the bottle of water and pretzels. Flight itself was ok, landed 25 mins early and then waited 30 minutes for a stand and ground crew. Bags came off reasonably quickly. BA still seems to believe it is something special, a premium carrier. The reality is that it is not. The only reason we flew BA was we got virtually free tickets because both flights were cancelled last year. BA is our carrier of last choice.",positive,Jersey ,
+207,1.0,1,yes,10,Faro to Gatwick,"  I booked my honeymoon flight from San Diego to Barcelona in September 2020. I have since needed to cancel this flight due to the pandemic and the uncertainty of travel, especially to other countries. I was able to change my flight at no cost, which is great. However, this is my honeymoon and I paid in advance for seats to ensure I sat next to my would be wife. This was more than $1,000 in additional cost. The response I received from British Airways is that it does not matter the reason, unless they cancel the flight, no refund or voucher is available. I then asked if I wanted to make sure I sat next to my would be wife, they expected me to pay again? The answer was yes. I'm very disappointed in the response from them during a global pandemic, where travel is not safe and we have no idea when it will be safe again.",,Venice ,Accra
+800,,5,No,1,,"  I take comfort in reading the last ten or so reviews to see I'm not the only traveller to put in words, how absolutely abysmal British Airways are! The only reason we are stuck using this awful airline is to use up points. We booked Club Europe months ago. London to Athens, sat in row 3 and told they had run out of food options, only choice was lentil pie or green curry. Returning Athens to London Club Europe. Couldn't check in online as promised so arrived at the airport 3hrs early. To be told they had overbooked the flight and basically we were being 'bumped' to economy. This airline fails to deliver time and time again. It is a national disgrace and I implore everyone to choose an alternative. ",negative,,Vegas
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Create a bar chart to visualize the recomended column.
+
+You generated this python code:
+df = dfs[0]
+recommended_counts = df['recommended'].value_counts()
+plt.figure(figsize=(8, 6))
+recommended_counts.plot(kind='bar')
+plt.title('Distribution of Recommended Flights')
+plt.xlabel('Recommended (yes/No)')
+plt.ylabel('Count')
+plt.xticks(rotation=0)
+plt.savefig('C:/Projects/Pandas AI/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': 'C:/Projects/Pandas AI/exports/charts/temp_chart.png'}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "C:\Users\amnit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 97, in execute
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Value type <class 'str'> must match with type plot
+
+
+Fix the python code above and return the new python code:
+2025-06-12 12:48:37 [INFO] Executing Step 1: CodeGenerator
+2025-06-12 12:48:39 [INFO] Prompt used:
+            
+<dataframe>
+dfs[0]:1000x10
+Unnamed: 0,ground_star,value_for,recommended,ratings,flight_path,reviews_new,sentiment,source,destination
+261,3.0,2,No,7,Mahe to Stockholm via London,"  Check in was so slow, no self check in and bag drop. Boarding was ok, flight totally full. Booked row 9 which was ok. Some space in overhead bins. Seat and legroom ok. Cabin crew ok, smiled, gave out the bottle of water and pretzels. Flight itself was ok, landed 25 mins early and then waited 30 minutes for a stand and ground crew. Bags came off reasonably quickly. BA still seems to believe it is something special, a premium carrier. The reality is that it is not. The only reason we flew BA was we got virtually free tickets because both flights were cancelled last year. BA is our carrier of last choice.",positive,Jersey ,
+207,1.0,1,yes,10,Faro to Gatwick,"  I booked my honeymoon flight from San Diego to Barcelona in September 2020. I have since needed to cancel this flight due to the pandemic and the uncertainty of travel, especially to other countries. I was able to change my flight at no cost, which is great. However, this is my honeymoon and I paid in advance for seats to ensure I sat next to my would be wife. This was more than $1,000 in additional cost. The response I received from British Airways is that it does not matter the reason, unless they cancel the flight, no refund or voucher is available. I then asked if I wanted to make sure I sat next to my would be wife, they expected me to pay again? The answer was yes. I'm very disappointed in the response from them during a global pandemic, where travel is not safe and we have no idea when it will be safe again.",,Venice ,Accra
+800,,5,No,1,,"  I take comfort in reading the last ten or so reviews to see I'm not the only traveller to put in words, how absolutely abysmal British Airways are! The only reason we are stuck using this awful airline is to use up points. We booked Club Europe months ago. London to Athens, sat in row 3 and told they had run out of food options, only choice was lentil pie or green curry. Returning Athens to London Club Europe. Couldn't check in online as promised so arrived at the airport 3hrs early. To be told they had overbooked the flight and basically we were being 'bumped' to economy. This airline fails to deliver time and time again. It is a national disgrace and I implore everyone to choose an alternative. ",negative,,Vegas
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Create a bar chart to visualize the recomended column.
+
+You generated this python code:
+df = dfs[0]
+recommended_counts = df['recommended'].value_counts()
+plt.figure(figsize=(8, 6))
+recommended_counts.plot(kind='bar')
+plt.title('Distribution of Recommended Flights')
+plt.xlabel('Recommended (yes/No)')
+plt.ylabel('Count')
+plt.xticks(rotation=0)
+plt.savefig('C:/Projects/Pandas AI/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': 'C:/Projects/Pandas AI/exports/charts/temp_chart.png'}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "C:\Users\amnit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 97, in execute
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Value type <class 'str'> must match with type plot
+
+
+Fix the python code above and return the new python code:
+            
+2025-06-12 12:48:40 [INFO] Code generated:
+            ```
+            import matplotlib.pyplot as plt
+df = dfs[0]
+recommended_counts = df['recommended'].value_counts()
+plt.figure(figsize=(8, 6))
+recommended_counts.plot(kind='bar')
+plt.title('Distribution of Recommended Flights')
+plt.xlabel('Recommended (yes/No)')
+plt.ylabel('Count')
+plt.xticks(rotation=0)
+result = {'type': 'plot', 'value': plt.gcf()} #Return the figure object
+            ```
+            
+2025-06-12 12:48:40 [INFO] Executing Step 2: CodeCleaning
+2025-06-12 12:48:40 [INFO] 
+Code running:
+```
+df = dfs[0]
+recommended_counts = df['recommended'].value_counts()
+plt.figure(figsize=(8, 6))
+recommended_counts.plot(kind='bar')
+plt.title('Distribution of Recommended Flights')
+plt.xlabel('Recommended (yes/No)')
+plt.ylabel('Count')
+plt.xticks(rotation=0)
+result = {'type': 'plot', 'value': plt.gcf()}
+        ```
+2025-06-12 12:48:40 [ERROR] Failed with error: Traceback (most recent call last):
+  File "C:\Users\amnit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amnit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 174, in execute_code
+    exec(code, environment)
+  File "<string>", line 9, in <module>
+  File "C:\Users\amnit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\safe_libs\restricted_matplotlib.py", line 75, in __getattr__
+    raise AttributeError(f"'{name}' is not allowed in RestrictedMatplotlib")
+AttributeError: 'gcf' is not allowed in RestrictedMatplotlib
+
+2025-06-12 12:48:40 [WARNING] Failed to execute code retrying with a correction framework [retry number: 2]
+2025-06-12 12:48:40 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2025-06-12 12:48:40 [INFO] Executing Step 0: ErrorPromptGeneration
+2025-06-12 12:48:40 [INFO] Using prompt: <dataframe>
+dfs[0]:1000x10
+Unnamed: 0,ground_star,value_for,recommended,ratings,flight_path,reviews_new,sentiment,source,destination
+261,3.0,2,No,7,Mahe to Stockholm via London,"  Check in was so slow, no self check in and bag drop. Boarding was ok, flight totally full. Booked row 9 which was ok. Some space in overhead bins. Seat and legroom ok. Cabin crew ok, smiled, gave out the bottle of water and pretzels. Flight itself was ok, landed 25 mins early and then waited 30 minutes for a stand and ground crew. Bags came off reasonably quickly. BA still seems to believe it is something special, a premium carrier. The reality is that it is not. The only reason we flew BA was we got virtually free tickets because both flights were cancelled last year. BA is our carrier of last choice.",positive,Jersey ,
+207,1.0,1,yes,10,Faro to Gatwick,"  I booked my honeymoon flight from San Diego to Barcelona in September 2020. I have since needed to cancel this flight due to the pandemic and the uncertainty of travel, especially to other countries. I was able to change my flight at no cost, which is great. However, this is my honeymoon and I paid in advance for seats to ensure I sat next to my would be wife. This was more than $1,000 in additional cost. The response I received from British Airways is that it does not matter the reason, unless they cancel the flight, no refund or voucher is available. I then asked if I wanted to make sure I sat next to my would be wife, they expected me to pay again? The answer was yes. I'm very disappointed in the response from them during a global pandemic, where travel is not safe and we have no idea when it will be safe again.",,Venice ,Accra
+800,,5,No,1,,"  I take comfort in reading the last ten or so reviews to see I'm not the only traveller to put in words, how absolutely abysmal British Airways are! The only reason we are stuck using this awful airline is to use up points. We booked Club Europe months ago. London to Athens, sat in row 3 and told they had run out of food options, only choice was lentil pie or green curry. Returning Athens to London Club Europe. Couldn't check in online as promised so arrived at the airport 3hrs early. To be told they had overbooked the flight and basically we were being 'bumped' to economy. This airline fails to deliver time and time again. It is a national disgrace and I implore everyone to choose an alternative. ",negative,,Vegas
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Create a bar chart to visualize the recomended column.
+
+You generated this python code:
+df = dfs[0]
+recommended_counts = df['recommended'].value_counts()
+plt.figure(figsize=(8, 6))
+recommended_counts.plot(kind='bar')
+plt.title('Distribution of Recommended Flights')
+plt.xlabel('Recommended (yes/No)')
+plt.ylabel('Count')
+plt.xticks(rotation=0)
+result = {'type': 'plot', 'value': plt.gcf()}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "C:\Users\amnit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amnit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 174, in execute_code
+    exec(code, environment)
+  File "<string>", line 9, in <module>
+  File "C:\Users\amnit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\safe_libs\restricted_matplotlib.py", line 75, in __getattr__
+    raise AttributeError(f"'{name}' is not allowed in RestrictedMatplotlib")
+AttributeError: 'gcf' is not allowed in RestrictedMatplotlib
+
+
+Fix the python code above and return the new python code:
+2025-06-12 12:48:40 [INFO] Executing Step 1: CodeGenerator
+2025-06-12 12:48:42 [INFO] Prompt used:
+            
+<dataframe>
+dfs[0]:1000x10
+Unnamed: 0,ground_star,value_for,recommended,ratings,flight_path,reviews_new,sentiment,source,destination
+261,3.0,2,No,7,Mahe to Stockholm via London,"  Check in was so slow, no self check in and bag drop. Boarding was ok, flight totally full. Booked row 9 which was ok. Some space in overhead bins. Seat and legroom ok. Cabin crew ok, smiled, gave out the bottle of water and pretzels. Flight itself was ok, landed 25 mins early and then waited 30 minutes for a stand and ground crew. Bags came off reasonably quickly. BA still seems to believe it is something special, a premium carrier. The reality is that it is not. The only reason we flew BA was we got virtually free tickets because both flights were cancelled last year. BA is our carrier of last choice.",positive,Jersey ,
+207,1.0,1,yes,10,Faro to Gatwick,"  I booked my honeymoon flight from San Diego to Barcelona in September 2020. I have since needed to cancel this flight due to the pandemic and the uncertainty of travel, especially to other countries. I was able to change my flight at no cost, which is great. However, this is my honeymoon and I paid in advance for seats to ensure I sat next to my would be wife. This was more than $1,000 in additional cost. The response I received from British Airways is that it does not matter the reason, unless they cancel the flight, no refund or voucher is available. I then asked if I wanted to make sure I sat next to my would be wife, they expected me to pay again? The answer was yes. I'm very disappointed in the response from them during a global pandemic, where travel is not safe and we have no idea when it will be safe again.",,Venice ,Accra
+800,,5,No,1,,"  I take comfort in reading the last ten or so reviews to see I'm not the only traveller to put in words, how absolutely abysmal British Airways are! The only reason we are stuck using this awful airline is to use up points. We booked Club Europe months ago. London to Athens, sat in row 3 and told they had run out of food options, only choice was lentil pie or green curry. Returning Athens to London Club Europe. Couldn't check in online as promised so arrived at the airport 3hrs early. To be told they had overbooked the flight and basically we were being 'bumped' to economy. This airline fails to deliver time and time again. It is a national disgrace and I implore everyone to choose an alternative. ",negative,,Vegas
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Create a bar chart to visualize the recomended column.
+
+You generated this python code:
+df = dfs[0]
+recommended_counts = df['recommended'].value_counts()
+plt.figure(figsize=(8, 6))
+recommended_counts.plot(kind='bar')
+plt.title('Distribution of Recommended Flights')
+plt.xlabel('Recommended (yes/No)')
+plt.ylabel('Count')
+plt.xticks(rotation=0)
+result = {'type': 'plot', 'value': plt.gcf()}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "C:\Users\amnit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amnit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 174, in execute_code
+    exec(code, environment)
+  File "<string>", line 9, in <module>
+  File "C:\Users\amnit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\safe_libs\restricted_matplotlib.py", line 75, in __getattr__
+    raise AttributeError(f"'{name}' is not allowed in RestrictedMatplotlib")
+AttributeError: 'gcf' is not allowed in RestrictedMatplotlib
+
+
+Fix the python code above and return the new python code:
+            
+2025-06-12 12:48:42 [INFO] Code generated:
+            ```
+            import matplotlib.pyplot as plt
+df = dfs[0]
+recommended_counts = df['recommended'].value_counts()
+plt.figure(figsize=(8, 6))
+recommended_counts.plot(kind='bar')
+plt.title('Distribution of Recommended Flights')
+plt.xlabel('Recommended (yes/No)')
+plt.ylabel('Count')
+plt.xticks(rotation=0)
+plt.savefig('recommended_flights.png') # Save the figure to a file
+result = {'type': 'image', 'value': 'recommended_flights.png'}
+            ```
+            
+2025-06-12 12:48:42 [INFO] Executing Step 2: CodeCleaning
+2025-06-12 12:48:42 [INFO] Saving charts to C:\Projects\Pandas AI\exports\charts\temp_chart.png
+2025-06-12 12:48:42 [INFO] 
+Code running:
+```
+df = dfs[0]
+recommended_counts = df['recommended'].value_counts()
+plt.figure(figsize=(8, 6))
+recommended_counts.plot(kind='bar')
+plt.title('Distribution of Recommended Flights')
+plt.xlabel('Recommended (yes/No)')
+plt.ylabel('Count')
+plt.xticks(rotation=0)
+plt.savefig('C:/Projects/Pandas AI/exports/charts/temp_chart.png')
+result = {'type': 'image', 'value': 'C:/Projects/Pandas AI/exports/charts/temp_chart.png'}
+        ```
+2025-06-12 12:48:42 [ERROR] Failed with error: Traceback (most recent call last):
+  File "C:\Users\amnit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 97, in execute
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Value type <class 'str'> must match with type image
+
+2025-06-12 12:48:42 [WARNING] Failed to execute code retrying with a correction framework [retry number: 3]
+2025-06-12 12:48:42 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2025-06-12 12:48:42 [INFO] Executing Step 0: ErrorPromptGeneration
+2025-06-12 12:48:42 [INFO] Using prompt: <dataframe>
+dfs[0]:1000x10
+Unnamed: 0,ground_star,value_for,recommended,ratings,flight_path,reviews_new,sentiment,source,destination
+261,3.0,2,No,7,Mahe to Stockholm via London,"  Check in was so slow, no self check in and bag drop. Boarding was ok, flight totally full. Booked row 9 which was ok. Some space in overhead bins. Seat and legroom ok. Cabin crew ok, smiled, gave out the bottle of water and pretzels. Flight itself was ok, landed 25 mins early and then waited 30 minutes for a stand and ground crew. Bags came off reasonably quickly. BA still seems to believe it is something special, a premium carrier. The reality is that it is not. The only reason we flew BA was we got virtually free tickets because both flights were cancelled last year. BA is our carrier of last choice.",positive,Jersey ,
+207,1.0,1,yes,10,Faro to Gatwick,"  I booked my honeymoon flight from San Diego to Barcelona in September 2020. I have since needed to cancel this flight due to the pandemic and the uncertainty of travel, especially to other countries. I was able to change my flight at no cost, which is great. However, this is my honeymoon and I paid in advance for seats to ensure I sat next to my would be wife. This was more than $1,000 in additional cost. The response I received from British Airways is that it does not matter the reason, unless they cancel the flight, no refund or voucher is available. I then asked if I wanted to make sure I sat next to my would be wife, they expected me to pay again? The answer was yes. I'm very disappointed in the response from them during a global pandemic, where travel is not safe and we have no idea when it will be safe again.",,Venice ,Accra
+800,,5,No,1,,"  I take comfort in reading the last ten or so reviews to see I'm not the only traveller to put in words, how absolutely abysmal British Airways are! The only reason we are stuck using this awful airline is to use up points. We booked Club Europe months ago. London to Athens, sat in row 3 and told they had run out of food options, only choice was lentil pie or green curry. Returning Athens to London Club Europe. Couldn't check in online as promised so arrived at the airport 3hrs early. To be told they had overbooked the flight and basically we were being 'bumped' to economy. This airline fails to deliver time and time again. It is a national disgrace and I implore everyone to choose an alternative. ",negative,,Vegas
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Create a bar chart to visualize the recomended column.
+
+You generated this python code:
+df = dfs[0]
+recommended_counts = df['recommended'].value_counts()
+plt.figure(figsize=(8, 6))
+recommended_counts.plot(kind='bar')
+plt.title('Distribution of Recommended Flights')
+plt.xlabel('Recommended (yes/No)')
+plt.ylabel('Count')
+plt.xticks(rotation=0)
+plt.savefig('C:/Projects/Pandas AI/exports/charts/temp_chart.png')
+result = {'type': 'image', 'value': 'C:/Projects/Pandas AI/exports/charts/temp_chart.png'}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "C:\Users\amnit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 97, in execute
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Value type <class 'str'> must match with type image
+
+
+Fix the python code above and return the new python code:
+2025-06-12 12:48:42 [INFO] Executing Step 1: CodeGenerator
+2025-06-12 12:48:46 [INFO] Prompt used:
+            
+<dataframe>
+dfs[0]:1000x10
+Unnamed: 0,ground_star,value_for,recommended,ratings,flight_path,reviews_new,sentiment,source,destination
+261,3.0,2,No,7,Mahe to Stockholm via London,"  Check in was so slow, no self check in and bag drop. Boarding was ok, flight totally full. Booked row 9 which was ok. Some space in overhead bins. Seat and legroom ok. Cabin crew ok, smiled, gave out the bottle of water and pretzels. Flight itself was ok, landed 25 mins early and then waited 30 minutes for a stand and ground crew. Bags came off reasonably quickly. BA still seems to believe it is something special, a premium carrier. The reality is that it is not. The only reason we flew BA was we got virtually free tickets because both flights were cancelled last year. BA is our carrier of last choice.",positive,Jersey ,
+207,1.0,1,yes,10,Faro to Gatwick,"  I booked my honeymoon flight from San Diego to Barcelona in September 2020. I have since needed to cancel this flight due to the pandemic and the uncertainty of travel, especially to other countries. I was able to change my flight at no cost, which is great. However, this is my honeymoon and I paid in advance for seats to ensure I sat next to my would be wife. This was more than $1,000 in additional cost. The response I received from British Airways is that it does not matter the reason, unless they cancel the flight, no refund or voucher is available. I then asked if I wanted to make sure I sat next to my would be wife, they expected me to pay again? The answer was yes. I'm very disappointed in the response from them during a global pandemic, where travel is not safe and we have no idea when it will be safe again.",,Venice ,Accra
+800,,5,No,1,,"  I take comfort in reading the last ten or so reviews to see I'm not the only traveller to put in words, how absolutely abysmal British Airways are! The only reason we are stuck using this awful airline is to use up points. We booked Club Europe months ago. London to Athens, sat in row 3 and told they had run out of food options, only choice was lentil pie or green curry. Returning Athens to London Club Europe. Couldn't check in online as promised so arrived at the airport 3hrs early. To be told they had overbooked the flight and basically we were being 'bumped' to economy. This airline fails to deliver time and time again. It is a national disgrace and I implore everyone to choose an alternative. ",negative,,Vegas
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Create a bar chart to visualize the recomended column.
+
+You generated this python code:
+df = dfs[0]
+recommended_counts = df['recommended'].value_counts()
+plt.figure(figsize=(8, 6))
+recommended_counts.plot(kind='bar')
+plt.title('Distribution of Recommended Flights')
+plt.xlabel('Recommended (yes/No)')
+plt.ylabel('Count')
+plt.xticks(rotation=0)
+plt.savefig('C:/Projects/Pandas AI/exports/charts/temp_chart.png')
+result = {'type': 'image', 'value': 'C:/Projects/Pandas AI/exports/charts/temp_chart.png'}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "C:\Users\amnit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 97, in execute
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Value type <class 'str'> must match with type image
+
+
+Fix the python code above and return the new python code:
+            
+2025-06-12 12:48:46 [INFO] Code generated:
+            ```
+            import pandas as pd
+import matplotlib.pyplot as plt
+import io
+import base64
+
+df = dfs[0]
+recommended_counts = df['recommended'].value_counts()
+plt.figure(figsize=(8, 6))
+recommended_counts.plot(kind='bar')
+plt.title('Distribution of Recommended Flights')
+plt.xlabel('Recommended (yes/No)')
+plt.ylabel('Count')
+plt.xticks(rotation=0)
+
+# Save the plot to a BytesIO object
+img = io.BytesIO()
+plt.savefig(img, format='png')
+img.seek(0)
+
+# Encode the image as base64
+plot_url = base64.b64encode(img.getvalue()).decode()
+
+result = {'type': 'image', 'value': plot_url}
+            ```
+            
+2025-06-12 12:48:46 [INFO] Executing Step 2: CodeCleaning
+2025-06-12 12:48:46 [ERROR] Pipeline failed on step 2: Restricted library import detected: io
+2025-06-12 12:48:46 [ERROR] Pipeline failed on step 6: Restricted library import detected: io
+2025-06-12 12:53:55 [INFO] Question: Create a bar chart to visualize the recomended column.
+2025-06-12 12:53:55 [INFO] Running PandasAI with langchain_chat-google-generative-ai LLM...
+2025-06-12 12:53:55 [INFO] Prompt ID: 3697cca0-21d1-4c5a-9720-8fe4498864f9
+2025-06-12 12:53:55 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-06-12 12:53:55 [INFO] Executing Step 0: ValidatePipelineInput
+2025-06-12 12:53:55 [INFO] Executing Step 1: CacheLookup
+2025-06-12 12:53:55 [INFO] Using cached response
+2025-06-12 12:53:55 [INFO] Executing Step 2: PromptGeneration
+2025-06-12 12:53:55 [INFO] Executing Step 2: Skipping...
+2025-06-12 12:53:55 [INFO] Executing Step 3: CodeGenerator
+2025-06-12 12:53:55 [INFO] Executing Step 3: Skipping...
+2025-06-12 12:53:55 [INFO] Executing Step 4: CachePopulation
+2025-06-12 12:53:55 [INFO] Executing Step 4: Skipping...
+2025-06-12 12:53:55 [INFO] Executing Step 5: CodeCleaning
+2025-06-12 12:53:55 [INFO] Saving charts to C:\Projects\Pandas AI\exports\charts\temp_chart.png
+2025-06-12 12:53:55 [INFO] 
+Code running:
+```
+df = dfs[0]
+recommended_counts = df['recommended'].value_counts()
+plt.figure(figsize=(8, 6))
+recommended_counts.plot(kind='bar')
+plt.title('Distribution of Recommended Flights')
+plt.xlabel('Recommended (yes/No)')
+plt.ylabel('Count')
+plt.xticks(rotation=0)
+plt.savefig('C:/Projects/Pandas AI/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': 'C:/Projects/Pandas AI/exports/charts/temp_chart.png'}
+        ```
+2025-06-12 12:53:55 [INFO] Executing Step 6: CodeExecution
+2025-06-12 12:53:55 [ERROR] Failed with error: Traceback (most recent call last):
+  File "C:\Users\amnit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 97, in execute
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Value type <class 'str'> must match with type plot
+
+2025-06-12 12:53:55 [WARNING] Failed to execute code retrying with a correction framework [retry number: 1]
+2025-06-12 12:53:55 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2025-06-12 12:53:55 [INFO] Executing Step 0: ErrorPromptGeneration
+2025-06-12 12:53:55 [INFO] Using prompt: <dataframe>
+dfs[0]:1000x10
+Unnamed: 0,ground_star,value_for,recommended,ratings,flight_path,reviews_new,sentiment,source,destination
+18,1.0,1,yes,5,,"  We were flying World Traveller Plus their Premium service. What it was not was Premium. We have travelled with many airlines and lucky enough to fly Premium most times. BA's premium is the worst I have come across. The flight from Heathrow to JFK was just ok, the flight back was in a plane that should not be used. Old, dirty, uncomfortable with two broken seats out of the four we had, one would not recline and one reclined without using the button. BA needs to look at the Premium service and offer exactly that instead of trying to cut costs. They have fallen far behind their competitors, they were once my preferred airline but now I try and avoid at all costs. I would rather pay more and fly with someone else.",negative,Florence ,Francisco
+193,,2,No,1,New York  to London Heathrow,"  Our Good Friday flight was delayed by 5hours, STD 12.50 ATD 18.00 TO Durban, South Africa from Johannesburg. There were no announcements made, when approached no time frame was given, they simply didn't know. An aircraft had to be towed from a hanger at Johannesburg. Crew arrived late. The aircraft was filthy. We shall never fly Comair again that includes Kulula or BA absolutely shocking service.",,New York JFK ,Marrakech
+953,2.0,4,No,10,Moscow to London Heathrow,"  Sydney to London via Singapore with British Airways. I made the mistake of ordering vegetarian meals on this flight - the food was horrendous, I was served an indistinguishable uniform mass of what appeared to be mashed, overcooked potatoes (and maybe other vegetables, I am not sure) for one meal and an ice cold frittata/sandwich which should clearly have been heated up. The latter I took one bite and couldn't continue. I have had better meals in economy class in other airlines. The seat was nothing to write home about, but noticeably comfortable compared to economy class (with the price difference to match of course). The service was lacking and quite perfunctory when it is available. On the plus side, I am glad there are shared toilets between business and premium economy class at the front of the cabin, instead of having to walk all the way to the back of the plane like some other flights. Paid for in-flight wifi for an a hour - disconnected after 40 minutes and no longer able to use. Reasonable price and speed.",positive,,
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Create a bar chart to visualize the recomended column.
+
+You generated this python code:
+df = dfs[0]
+recommended_counts = df['recommended'].value_counts()
+plt.figure(figsize=(8, 6))
+recommended_counts.plot(kind='bar')
+plt.title('Distribution of Recommended Flights')
+plt.xlabel('Recommended (yes/No)')
+plt.ylabel('Count')
+plt.xticks(rotation=0)
+plt.savefig('C:/Projects/Pandas AI/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': 'C:/Projects/Pandas AI/exports/charts/temp_chart.png'}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "C:\Users\amnit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 97, in execute
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Value type <class 'str'> must match with type plot
+
+
+Fix the python code above and return the new python code:
+2025-06-12 12:53:55 [INFO] Executing Step 1: CodeGenerator
+2025-06-12 12:54:01 [INFO] Prompt used:
+            
+<dataframe>
+dfs[0]:1000x10
+Unnamed: 0,ground_star,value_for,recommended,ratings,flight_path,reviews_new,sentiment,source,destination
+18,1.0,1,yes,5,,"  We were flying World Traveller Plus their Premium service. What it was not was Premium. We have travelled with many airlines and lucky enough to fly Premium most times. BA's premium is the worst I have come across. The flight from Heathrow to JFK was just ok, the flight back was in a plane that should not be used. Old, dirty, uncomfortable with two broken seats out of the four we had, one would not recline and one reclined without using the button. BA needs to look at the Premium service and offer exactly that instead of trying to cut costs. They have fallen far behind their competitors, they were once my preferred airline but now I try and avoid at all costs. I would rather pay more and fly with someone else.",negative,Florence ,Francisco
+193,,2,No,1,New York  to London Heathrow,"  Our Good Friday flight was delayed by 5hours, STD 12.50 ATD 18.00 TO Durban, South Africa from Johannesburg. There were no announcements made, when approached no time frame was given, they simply didn't know. An aircraft had to be towed from a hanger at Johannesburg. Crew arrived late. The aircraft was filthy. We shall never fly Comair again that includes Kulula or BA absolutely shocking service.",,New York JFK ,Marrakech
+953,2.0,4,No,10,Moscow to London Heathrow,"  Sydney to London via Singapore with British Airways. I made the mistake of ordering vegetarian meals on this flight - the food was horrendous, I was served an indistinguishable uniform mass of what appeared to be mashed, overcooked potatoes (and maybe other vegetables, I am not sure) for one meal and an ice cold frittata/sandwich which should clearly have been heated up. The latter I took one bite and couldn't continue. I have had better meals in economy class in other airlines. The seat was nothing to write home about, but noticeably comfortable compared to economy class (with the price difference to match of course). The service was lacking and quite perfunctory when it is available. On the plus side, I am glad there are shared toilets between business and premium economy class at the front of the cabin, instead of having to walk all the way to the back of the plane like some other flights. Paid for in-flight wifi for an a hour - disconnected after 40 minutes and no longer able to use. Reasonable price and speed.",positive,,
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Create a bar chart to visualize the recomended column.
+
+You generated this python code:
+df = dfs[0]
+recommended_counts = df['recommended'].value_counts()
+plt.figure(figsize=(8, 6))
+recommended_counts.plot(kind='bar')
+plt.title('Distribution of Recommended Flights')
+plt.xlabel('Recommended (yes/No)')
+plt.ylabel('Count')
+plt.xticks(rotation=0)
+plt.savefig('C:/Projects/Pandas AI/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': 'C:/Projects/Pandas AI/exports/charts/temp_chart.png'}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "C:\Users\amnit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 97, in execute
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Value type <class 'str'> must match with type plot
+
+
+Fix the python code above and return the new python code:
+            
+2025-06-12 12:54:01 [INFO] Code generated:
+            ```
+            import pandas as pd
+import matplotlib.pyplot as plt
+import io
+import base64
+
+df = dfs[0]
+recommended_counts = df['recommended'].value_counts()
+plt.figure(figsize=(8, 6))
+recommended_counts.plot(kind='bar')
+plt.title('Distribution of Recommended Flights')
+plt.xlabel('Recommended (yes/No)')
+plt.ylabel('Count')
+plt.xticks(rotation=0)
+
+# Save the plot to a BytesIO object
+img = io.BytesIO()
+plt.savefig(img, format='png')
+img.seek(0)
+
+# Encode the image as base64
+plot_data = base64.b64encode(img.getvalue()).decode()
+
+result = {'type': 'plot', 'value': plot_data}
+            ```
+            
+2025-06-12 12:54:01 [INFO] Executing Step 2: CodeCleaning
+2025-06-12 12:54:01 [ERROR] Pipeline failed on step 2: Restricted library import detected: io
+2025-06-12 12:54:01 [ERROR] Pipeline failed on step 6: Restricted library import detected: io
+2025-06-12 12:54:55 [INFO] Question: Create a suitable chart to visualize the sentiment 
+2025-06-12 12:54:55 [INFO] Running PandasAI with langchain_chat-google-generative-ai LLM...
+2025-06-12 12:54:55 [INFO] Prompt ID: e1a76d59-6f66-4acb-8b01-ba915348eee8
+2025-06-12 12:54:55 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-06-12 12:54:55 [INFO] Executing Step 0: ValidatePipelineInput
+2025-06-12 12:54:55 [INFO] Executing Step 1: CacheLookup
+2025-06-12 12:54:55 [INFO] Executing Step 2: PromptGeneration
+2025-06-12 12:54:55 [INFO] Using prompt: <dataframe>
+dfs[0]:1000x10
+Unnamed: 0,ground_star,value_for,recommended,ratings,flight_path,reviews_new,sentiment,source,destination
+241,,5,yes,10,Marrakech to London Heathrow,"  Overall not bad. Staff look tired and overworked, trying their best. Weird seats, I was in 21G going, and 21D going home. The buttons to press for the seat recline are so stiff I had to get help on both flights to get them to work. There is another button, also very stiff, to bring the “leg rest” out. This is an awkward thing which doesn’t come up far enough to be of any use at all for your legs, but just obstructs your feet really. Again, I had to get help to activate the very stiff buttons. At one point, the lady next to me was pressing the buttons for me while I tried to recline, sit up, or put the “leg rest” back. We gave up and called the flight attendant, who also had trouble. BA: please give this some maintenance! Food: only one out of three menu choices available by the time it got to me in Premium Ec. It was pasta and was not too bad. A Christmas Turkey Dinner was offered, but why not load more if it is so popular that it is not available 10 minutes into the meal service? “Breakfast” was an unidentified soggy pastry thing in a cardboard tube. It was disgusting, same offered on return journey. A cold pastry and fruit would be so much nicer. The tea and coffee was hot at least. Overall, I would say Air Canada provides a much superior Premium Ec service than BA. I won’t choose BA again.",,Madrid ,Florence
+625,5.0,2,No,9,,"  British Airways oversold my LHR to LAX flight; I booked months in advance paid in full and actually paid over $1000 extra to fly their Airbus A380. Tried to check in online day before flight, got unknown system error couldn’t check in. Arrived at LHR 3.5 hours early; none of BA kiosks worked, all manual check in by understaffed BA staff who were all unhelpful. Insane queue times; lots of other frustrated passengers in line. Denied boarding at the gate because flight oversold, no explanations, no apologies, constantly ignored by BA staff who don’t have the patience to listen to your situation or be helpful. Finally gate manager books alternate flight to Paris CDG, supposedly to connect with an Air France flight. We get to CDG only to be told by Air France their flight was full; no idea why BA manager bumped me to AF flight that’s also full! That’s insult to injury to be bumped twice! Went to BA desk at CDG, no help at all they told us to call BA and couldn’t even provide the phone number; just told us to look online. On top of all that my luggage is lost somewhere between BA and AF in Paris CDG. I’m an American citizen and speak perfect English, but I feel completely humiliated and treated like second class citizen by multiple BA staff through the whole ordeal. Mostly they just ignore you or bounce you from one counter to another without even trying to listen to your problem. Zero accountability. Will never ever fly BA again! Absolute worst travel experience of my life.",negative,Nashville ,Mauritius
+929,4.0,4,yes,5,Columbus to Nairobi via Chicago / London," Absolutely horrible airline. Communication is terrible. Last minute delays, cancellations, seat changes with no communication. App and website user experience is years behind other airlines. Seats are cramped and uncomfortable. Overpriced. Would not fly again.",positive,,
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Create a suitable chart to visualize the sentiment 
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-06-12 12:54:55 [INFO] Executing Step 3: CodeGenerator
+2025-06-12 12:55:02 [INFO] Prompt used:
+            
+<dataframe>
+dfs[0]:1000x10
+Unnamed: 0,ground_star,value_for,recommended,ratings,flight_path,reviews_new,sentiment,source,destination
+241,,5,yes,10,Marrakech to London Heathrow,"  Overall not bad. Staff look tired and overworked, trying their best. Weird seats, I was in 21G going, and 21D going home. The buttons to press for the seat recline are so stiff I had to get help on both flights to get them to work. There is another button, also very stiff, to bring the “leg rest” out. This is an awkward thing which doesn’t come up far enough to be of any use at all for your legs, but just obstructs your feet really. Again, I had to get help to activate the very stiff buttons. At one point, the lady next to me was pressing the buttons for me while I tried to recline, sit up, or put the “leg rest” back. We gave up and called the flight attendant, who also had trouble. BA: please give this some maintenance! Food: only one out of three menu choices available by the time it got to me in Premium Ec. It was pasta and was not too bad. A Christmas Turkey Dinner was offered, but why not load more if it is so popular that it is not available 10 minutes into the meal service? “Breakfast” was an unidentified soggy pastry thing in a cardboard tube. It was disgusting, same offered on return journey. A cold pastry and fruit would be so much nicer. The tea and coffee was hot at least. Overall, I would say Air Canada provides a much superior Premium Ec service than BA. I won’t choose BA again.",,Madrid ,Florence
+625,5.0,2,No,9,,"  British Airways oversold my LHR to LAX flight; I booked months in advance paid in full and actually paid over $1000 extra to fly their Airbus A380. Tried to check in online day before flight, got unknown system error couldn’t check in. Arrived at LHR 3.5 hours early; none of BA kiosks worked, all manual check in by understaffed BA staff who were all unhelpful. Insane queue times; lots of other frustrated passengers in line. Denied boarding at the gate because flight oversold, no explanations, no apologies, constantly ignored by BA staff who don’t have the patience to listen to your situation or be helpful. Finally gate manager books alternate flight to Paris CDG, supposedly to connect with an Air France flight. We get to CDG only to be told by Air France their flight was full; no idea why BA manager bumped me to AF flight that’s also full! That’s insult to injury to be bumped twice! Went to BA desk at CDG, no help at all they told us to call BA and couldn’t even provide the phone number; just told us to look online. On top of all that my luggage is lost somewhere between BA and AF in Paris CDG. I’m an American citizen and speak perfect English, but I feel completely humiliated and treated like second class citizen by multiple BA staff through the whole ordeal. Mostly they just ignore you or bounce you from one counter to another without even trying to listen to your problem. Zero accountability. Will never ever fly BA again! Absolute worst travel experience of my life.",negative,Nashville ,Mauritius
+929,4.0,4,yes,5,Columbus to Nairobi via Chicago / London," Absolutely horrible airline. Communication is terrible. Last minute delays, cancellations, seat changes with no communication. App and website user experience is years behind other airlines. Seats are cramped and uncomfortable. Overpriced. Would not fly again.",positive,,
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Create a suitable chart to visualize the sentiment 
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2025-06-12 12:55:02 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Write code here
+dfs = [pd.DataFrame({
+    'Unnamed: 0': [241, 625, 929],
+    'ground_star': ['', '5.0', '4.0'],
+    'value_for': [5, 2, 4],
+    'recommended': ['yes', 'No', 'yes'],
+    'ratings': [10, 9, 5],
+    'flight_path': ['Marrakech to London Heathrow', '', 'Columbus to Nairobi via Chicago / London'],
+    'reviews_new': ['  Overall not bad. Staff look tired and overworked, trying their best. Weird seats, I was in 21G going, and 21D going home. The buttons to press for the seat recline are so stiff I had to get help on both flights to get them to work. There is another button, also very stiff, to bring the “leg rest” out. This is an awkward thing which doesn’t come up far enough to be of any use at all for your legs, but just obstructs your feet really. Again, I had to get help to activate the very stiff buttons. At one point, the lady next to me was pressing the buttons for me while I tried to recline, sit up, or put the “leg rest” back. We gave up and called the flight attendant, who also had trouble. BA: please give this some maintenance! Food: only one out of three menu choices available by the time it got to me in Premium Ec. It was pasta and was not too bad. A Christmas Turkey Dinner was offered, but why not load more if it is so popular that it is not available 10 minutes into the meal service? “Breakfast” was an unidentified soggy pastry thing in a cardboard tube. It was disgusting, same offered on return journey. A cold pastry and fruit would be so much nicer. The tea and coffee was hot at least. Overall, I would say Air Canada provides a much superior Premium Ec service than BA. I won’t choose BA again.', '  British Airways oversold my LHR to LAX flight; I booked months in advance paid in full and actually paid over $1000 extra to fly their Airbus A380. Tried to check in online day before flight, got unknown system error couldn’t check in. Arrived at LHR 3.5 hours early; none of BA kiosks worked, all manual check in by understaffed BA staff who were all unhelpful. Insane queue times; lots of other frustrated passengers in line. Denied boarding at the gate because flight oversold, no explanations, no apologies, constantly ignored by BA staff who don’t have the patience to listen to your situation or be helpful. Finally gate manager books alternate flight to Paris CDG, supposedly to connect with an Air France flight. We get to CDG only to be told by Air France their flight was full; no idea why BA manager bumped me to AF flight that’s also full! That’s insult to injury to be bumped twice! Went to BA desk at CDG, no help at all they told us to call BA and couldn’t even provide the phone number; just told us to look online. On top of all that my luggage is lost somewhere between BA and AF in Paris CDG. I’m an American citizen and speak perfect English, but I feel completely humiliated and treated like second class citizen by multiple BA staff through the whole ordeal. Mostly they just ignore you or bounce you from one counter to another without even trying to listen to your problem. Zero accountability. Will never ever fly BA again! Absolute worst travel experience of my life.', ' Absolutely horrible airline. Communication is terrible. Last minute delays, cancellations, seat changes with no communication. App and website user experience is years behind other airlines. Seats are cramped and uncomfortable. Overpriced. Would not fly again.'],
+    'sentiment': ['', 'negative', 'positive'],
+    'source': ['Madrid', 'Nashville', ''],
+    'destination': ['Florence', 'Mauritius', '']
+})]
+
+
+sentiment_counts = dfs[0]['sentiment'].value_counts()
+
+plt.figure(figsize=(8, 6))
+sentiment_counts.plot(kind='bar')
+plt.title('Sentiment Analysis of Reviews')
+plt.xlabel('Sentiment')
+plt.ylabel('Number of Reviews')
+plt.xticks(rotation=0)
+plt.savefig('sentiment_chart.png')
+
+# Declare result var: 
+result = { "type": "plot", "value": "sentiment_chart.png" }
+            ```
+            
+2025-06-12 12:55:02 [INFO] Executing Step 4: CachePopulation
+2025-06-12 12:55:02 [INFO] Executing Step 5: CodeCleaning
+2025-06-12 12:55:02 [INFO] Saving charts to C:\Projects\Pandas AI\exports\charts\temp_chart.png
+2025-06-12 12:55:02 [INFO] 
+Code running:
+```
+sentiment_counts = dfs[0]['sentiment'].value_counts()
+plt.figure(figsize=(8, 6))
+sentiment_counts.plot(kind='bar')
+plt.title('Sentiment Analysis of Reviews')
+plt.xlabel('Sentiment')
+plt.ylabel('Number of Reviews')
+plt.xticks(rotation=0)
+plt.savefig('C:/Projects/Pandas AI/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': 'C:/Projects/Pandas AI/exports/charts/temp_chart.png'}
+        ```
+2025-06-12 12:55:02 [INFO] Executing Step 6: CodeExecution
+2025-06-12 12:55:03 [ERROR] Failed with error: Traceback (most recent call last):
+  File "C:\Users\amnit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 97, in execute
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Value type <class 'str'> must match with type plot
+
+2025-06-12 12:55:03 [WARNING] Failed to execute code retrying with a correction framework [retry number: 1]
+2025-06-12 12:55:03 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2025-06-12 12:55:03 [INFO] Executing Step 0: ErrorPromptGeneration
+2025-06-12 12:55:03 [INFO] Using prompt: <dataframe>
+dfs[0]:1000x10
+Unnamed: 0,ground_star,value_for,recommended,ratings,flight_path,reviews_new,sentiment,source,destination
+241,,5,yes,10,Marrakech to London Heathrow,"  Overall not bad. Staff look tired and overworked, trying their best. Weird seats, I was in 21G going, and 21D going home. The buttons to press for the seat recline are so stiff I had to get help on both flights to get them to work. There is another button, also very stiff, to bring the “leg rest” out. This is an awkward thing which doesn’t come up far enough to be of any use at all for your legs, but just obstructs your feet really. Again, I had to get help to activate the very stiff buttons. At one point, the lady next to me was pressing the buttons for me while I tried to recline, sit up, or put the “leg rest” back. We gave up and called the flight attendant, who also had trouble. BA: please give this some maintenance! Food: only one out of three menu choices available by the time it got to me in Premium Ec. It was pasta and was not too bad. A Christmas Turkey Dinner was offered, but why not load more if it is so popular that it is not available 10 minutes into the meal service? “Breakfast” was an unidentified soggy pastry thing in a cardboard tube. It was disgusting, same offered on return journey. A cold pastry and fruit would be so much nicer. The tea and coffee was hot at least. Overall, I would say Air Canada provides a much superior Premium Ec service than BA. I won’t choose BA again.",,Madrid ,Florence
+625,5.0,2,No,9,,"  British Airways oversold my LHR to LAX flight; I booked months in advance paid in full and actually paid over $1000 extra to fly their Airbus A380. Tried to check in online day before flight, got unknown system error couldn’t check in. Arrived at LHR 3.5 hours early; none of BA kiosks worked, all manual check in by understaffed BA staff who were all unhelpful. Insane queue times; lots of other frustrated passengers in line. Denied boarding at the gate because flight oversold, no explanations, no apologies, constantly ignored by BA staff who don’t have the patience to listen to your situation or be helpful. Finally gate manager books alternate flight to Paris CDG, supposedly to connect with an Air France flight. We get to CDG only to be told by Air France their flight was full; no idea why BA manager bumped me to AF flight that’s also full! That’s insult to injury to be bumped twice! Went to BA desk at CDG, no help at all they told us to call BA and couldn’t even provide the phone number; just told us to look online. On top of all that my luggage is lost somewhere between BA and AF in Paris CDG. I’m an American citizen and speak perfect English, but I feel completely humiliated and treated like second class citizen by multiple BA staff through the whole ordeal. Mostly they just ignore you or bounce you from one counter to another without even trying to listen to your problem. Zero accountability. Will never ever fly BA again! Absolute worst travel experience of my life.",negative,Nashville ,Mauritius
+929,4.0,4,yes,5,Columbus to Nairobi via Chicago / London," Absolutely horrible airline. Communication is terrible. Last minute delays, cancellations, seat changes with no communication. App and website user experience is years behind other airlines. Seats are cramped and uncomfortable. Overpriced. Would not fly again.",positive,,
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Create a suitable chart to visualize the sentiment 
+
+You generated this python code:
+sentiment_counts = dfs[0]['sentiment'].value_counts()
+plt.figure(figsize=(8, 6))
+sentiment_counts.plot(kind='bar')
+plt.title('Sentiment Analysis of Reviews')
+plt.xlabel('Sentiment')
+plt.ylabel('Number of Reviews')
+plt.xticks(rotation=0)
+plt.savefig('C:/Projects/Pandas AI/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': 'C:/Projects/Pandas AI/exports/charts/temp_chart.png'}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "C:\Users\amnit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 97, in execute
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Value type <class 'str'> must match with type plot
+
+
+Fix the python code above and return the new python code:
+2025-06-12 12:55:03 [INFO] Executing Step 1: CodeGenerator
+2025-06-12 12:55:06 [INFO] Prompt used:
+            
+<dataframe>
+dfs[0]:1000x10
+Unnamed: 0,ground_star,value_for,recommended,ratings,flight_path,reviews_new,sentiment,source,destination
+241,,5,yes,10,Marrakech to London Heathrow,"  Overall not bad. Staff look tired and overworked, trying their best. Weird seats, I was in 21G going, and 21D going home. The buttons to press for the seat recline are so stiff I had to get help on both flights to get them to work. There is another button, also very stiff, to bring the “leg rest” out. This is an awkward thing which doesn’t come up far enough to be of any use at all for your legs, but just obstructs your feet really. Again, I had to get help to activate the very stiff buttons. At one point, the lady next to me was pressing the buttons for me while I tried to recline, sit up, or put the “leg rest” back. We gave up and called the flight attendant, who also had trouble. BA: please give this some maintenance! Food: only one out of three menu choices available by the time it got to me in Premium Ec. It was pasta and was not too bad. A Christmas Turkey Dinner was offered, but why not load more if it is so popular that it is not available 10 minutes into the meal service? “Breakfast” was an unidentified soggy pastry thing in a cardboard tube. It was disgusting, same offered on return journey. A cold pastry and fruit would be so much nicer. The tea and coffee was hot at least. Overall, I would say Air Canada provides a much superior Premium Ec service than BA. I won’t choose BA again.",,Madrid ,Florence
+625,5.0,2,No,9,,"  British Airways oversold my LHR to LAX flight; I booked months in advance paid in full and actually paid over $1000 extra to fly their Airbus A380. Tried to check in online day before flight, got unknown system error couldn’t check in. Arrived at LHR 3.5 hours early; none of BA kiosks worked, all manual check in by understaffed BA staff who were all unhelpful. Insane queue times; lots of other frustrated passengers in line. Denied boarding at the gate because flight oversold, no explanations, no apologies, constantly ignored by BA staff who don’t have the patience to listen to your situation or be helpful. Finally gate manager books alternate flight to Paris CDG, supposedly to connect with an Air France flight. We get to CDG only to be told by Air France their flight was full; no idea why BA manager bumped me to AF flight that’s also full! That’s insult to injury to be bumped twice! Went to BA desk at CDG, no help at all they told us to call BA and couldn’t even provide the phone number; just told us to look online. On top of all that my luggage is lost somewhere between BA and AF in Paris CDG. I’m an American citizen and speak perfect English, but I feel completely humiliated and treated like second class citizen by multiple BA staff through the whole ordeal. Mostly they just ignore you or bounce you from one counter to another without even trying to listen to your problem. Zero accountability. Will never ever fly BA again! Absolute worst travel experience of my life.",negative,Nashville ,Mauritius
+929,4.0,4,yes,5,Columbus to Nairobi via Chicago / London," Absolutely horrible airline. Communication is terrible. Last minute delays, cancellations, seat changes with no communication. App and website user experience is years behind other airlines. Seats are cramped and uncomfortable. Overpriced. Would not fly again.",positive,,
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Create a suitable chart to visualize the sentiment 
+
+You generated this python code:
+sentiment_counts = dfs[0]['sentiment'].value_counts()
+plt.figure(figsize=(8, 6))
+sentiment_counts.plot(kind='bar')
+plt.title('Sentiment Analysis of Reviews')
+plt.xlabel('Sentiment')
+plt.ylabel('Number of Reviews')
+plt.xticks(rotation=0)
+plt.savefig('C:/Projects/Pandas AI/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': 'C:/Projects/Pandas AI/exports/charts/temp_chart.png'}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "C:\Users\amnit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 97, in execute
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Value type <class 'str'> must match with type plot
+
+
+Fix the python code above and return the new python code:
+            
+2025-06-12 12:55:06 [INFO] Code generated:
+            ```
+            import matplotlib.pyplot as plt
+sentiment_counts = dfs[0]['sentiment'].value_counts()
+plt.figure(figsize=(8, 6))
+sentiment_counts.plot(kind='bar')
+plt.title('Sentiment Analysis of Reviews')
+plt.xlabel('Sentiment')
+plt.ylabel('Number of Reviews')
+plt.xticks(rotation=0)
+# Remove the savefig line.  We're returning the figure object directly.
+# plt.savefig('C:/Projects/Pandas AI/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': plt.gcf()} #plt.gcf() gets the current figure
+            ```
+            
+2025-06-12 12:55:06 [INFO] Executing Step 2: CodeCleaning
+2025-06-12 12:55:06 [INFO] Saving charts to C:\Projects\Pandas AI\exports\charts\temp_chart.png
+2025-06-12 12:55:06 [INFO] 
+Code running:
+```
+sentiment_counts = dfs[0]['sentiment'].value_counts()
+plt.figure(figsize=(8, 6))
+sentiment_counts.plot(kind='bar')
+plt.title('Sentiment Analysis of Reviews')
+plt.xlabel('Sentiment')
+plt.ylabel('Number of Reviews')
+plt.xticks(rotation=0)
+result = {'type': 'plot', 'value': plt.gcf()}
+        ```
+2025-06-12 12:55:06 [ERROR] Failed with error: Traceback (most recent call last):
+  File "C:\Users\amnit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amnit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 174, in execute_code
+    exec(code, environment)
+  File "<string>", line 8, in <module>
+  File "C:\Users\amnit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\safe_libs\restricted_matplotlib.py", line 75, in __getattr__
+    raise AttributeError(f"'{name}' is not allowed in RestrictedMatplotlib")
+AttributeError: 'gcf' is not allowed in RestrictedMatplotlib
+
+2025-06-12 12:55:06 [WARNING] Failed to execute code retrying with a correction framework [retry number: 2]
+2025-06-12 12:55:06 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2025-06-12 12:55:06 [INFO] Executing Step 0: ErrorPromptGeneration
+2025-06-12 12:55:06 [INFO] Using prompt: <dataframe>
+dfs[0]:1000x10
+Unnamed: 0,ground_star,value_for,recommended,ratings,flight_path,reviews_new,sentiment,source,destination
+241,,5,yes,10,Marrakech to London Heathrow,"  Overall not bad. Staff look tired and overworked, trying their best. Weird seats, I was in 21G going, and 21D going home. The buttons to press for the seat recline are so stiff I had to get help on both flights to get them to work. There is another button, also very stiff, to bring the “leg rest” out. This is an awkward thing which doesn’t come up far enough to be of any use at all for your legs, but just obstructs your feet really. Again, I had to get help to activate the very stiff buttons. At one point, the lady next to me was pressing the buttons for me while I tried to recline, sit up, or put the “leg rest” back. We gave up and called the flight attendant, who also had trouble. BA: please give this some maintenance! Food: only one out of three menu choices available by the time it got to me in Premium Ec. It was pasta and was not too bad. A Christmas Turkey Dinner was offered, but why not load more if it is so popular that it is not available 10 minutes into the meal service? “Breakfast” was an unidentified soggy pastry thing in a cardboard tube. It was disgusting, same offered on return journey. A cold pastry and fruit would be so much nicer. The tea and coffee was hot at least. Overall, I would say Air Canada provides a much superior Premium Ec service than BA. I won’t choose BA again.",,Madrid ,Florence
+625,5.0,2,No,9,,"  British Airways oversold my LHR to LAX flight; I booked months in advance paid in full and actually paid over $1000 extra to fly their Airbus A380. Tried to check in online day before flight, got unknown system error couldn’t check in. Arrived at LHR 3.5 hours early; none of BA kiosks worked, all manual check in by understaffed BA staff who were all unhelpful. Insane queue times; lots of other frustrated passengers in line. Denied boarding at the gate because flight oversold, no explanations, no apologies, constantly ignored by BA staff who don’t have the patience to listen to your situation or be helpful. Finally gate manager books alternate flight to Paris CDG, supposedly to connect with an Air France flight. We get to CDG only to be told by Air France their flight was full; no idea why BA manager bumped me to AF flight that’s also full! That’s insult to injury to be bumped twice! Went to BA desk at CDG, no help at all they told us to call BA and couldn’t even provide the phone number; just told us to look online. On top of all that my luggage is lost somewhere between BA and AF in Paris CDG. I’m an American citizen and speak perfect English, but I feel completely humiliated and treated like second class citizen by multiple BA staff through the whole ordeal. Mostly they just ignore you or bounce you from one counter to another without even trying to listen to your problem. Zero accountability. Will never ever fly BA again! Absolute worst travel experience of my life.",negative,Nashville ,Mauritius
+929,4.0,4,yes,5,Columbus to Nairobi via Chicago / London," Absolutely horrible airline. Communication is terrible. Last minute delays, cancellations, seat changes with no communication. App and website user experience is years behind other airlines. Seats are cramped and uncomfortable. Overpriced. Would not fly again.",positive,,
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Create a suitable chart to visualize the sentiment 
+
+You generated this python code:
+sentiment_counts = dfs[0]['sentiment'].value_counts()
+plt.figure(figsize=(8, 6))
+sentiment_counts.plot(kind='bar')
+plt.title('Sentiment Analysis of Reviews')
+plt.xlabel('Sentiment')
+plt.ylabel('Number of Reviews')
+plt.xticks(rotation=0)
+result = {'type': 'plot', 'value': plt.gcf()}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "C:\Users\amnit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amnit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 174, in execute_code
+    exec(code, environment)
+  File "<string>", line 8, in <module>
+  File "C:\Users\amnit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\safe_libs\restricted_matplotlib.py", line 75, in __getattr__
+    raise AttributeError(f"'{name}' is not allowed in RestrictedMatplotlib")
+AttributeError: 'gcf' is not allowed in RestrictedMatplotlib
+
+
+Fix the python code above and return the new python code:
+2025-06-12 12:55:06 [INFO] Executing Step 1: CodeGenerator
+2025-06-12 12:55:09 [INFO] Prompt used:
+            
+<dataframe>
+dfs[0]:1000x10
+Unnamed: 0,ground_star,value_for,recommended,ratings,flight_path,reviews_new,sentiment,source,destination
+241,,5,yes,10,Marrakech to London Heathrow,"  Overall not bad. Staff look tired and overworked, trying their best. Weird seats, I was in 21G going, and 21D going home. The buttons to press for the seat recline are so stiff I had to get help on both flights to get them to work. There is another button, also very stiff, to bring the “leg rest” out. This is an awkward thing which doesn’t come up far enough to be of any use at all for your legs, but just obstructs your feet really. Again, I had to get help to activate the very stiff buttons. At one point, the lady next to me was pressing the buttons for me while I tried to recline, sit up, or put the “leg rest” back. We gave up and called the flight attendant, who also had trouble. BA: please give this some maintenance! Food: only one out of three menu choices available by the time it got to me in Premium Ec. It was pasta and was not too bad. A Christmas Turkey Dinner was offered, but why not load more if it is so popular that it is not available 10 minutes into the meal service? “Breakfast” was an unidentified soggy pastry thing in a cardboard tube. It was disgusting, same offered on return journey. A cold pastry and fruit would be so much nicer. The tea and coffee was hot at least. Overall, I would say Air Canada provides a much superior Premium Ec service than BA. I won’t choose BA again.",,Madrid ,Florence
+625,5.0,2,No,9,,"  British Airways oversold my LHR to LAX flight; I booked months in advance paid in full and actually paid over $1000 extra to fly their Airbus A380. Tried to check in online day before flight, got unknown system error couldn’t check in. Arrived at LHR 3.5 hours early; none of BA kiosks worked, all manual check in by understaffed BA staff who were all unhelpful. Insane queue times; lots of other frustrated passengers in line. Denied boarding at the gate because flight oversold, no explanations, no apologies, constantly ignored by BA staff who don’t have the patience to listen to your situation or be helpful. Finally gate manager books alternate flight to Paris CDG, supposedly to connect with an Air France flight. We get to CDG only to be told by Air France their flight was full; no idea why BA manager bumped me to AF flight that’s also full! That’s insult to injury to be bumped twice! Went to BA desk at CDG, no help at all they told us to call BA and couldn’t even provide the phone number; just told us to look online. On top of all that my luggage is lost somewhere between BA and AF in Paris CDG. I’m an American citizen and speak perfect English, but I feel completely humiliated and treated like second class citizen by multiple BA staff through the whole ordeal. Mostly they just ignore you or bounce you from one counter to another without even trying to listen to your problem. Zero accountability. Will never ever fly BA again! Absolute worst travel experience of my life.",negative,Nashville ,Mauritius
+929,4.0,4,yes,5,Columbus to Nairobi via Chicago / London," Absolutely horrible airline. Communication is terrible. Last minute delays, cancellations, seat changes with no communication. App and website user experience is years behind other airlines. Seats are cramped and uncomfortable. Overpriced. Would not fly again.",positive,,
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Create a suitable chart to visualize the sentiment 
+
+You generated this python code:
+sentiment_counts = dfs[0]['sentiment'].value_counts()
+plt.figure(figsize=(8, 6))
+sentiment_counts.plot(kind='bar')
+plt.title('Sentiment Analysis of Reviews')
+plt.xlabel('Sentiment')
+plt.ylabel('Number of Reviews')
+plt.xticks(rotation=0)
+result = {'type': 'plot', 'value': plt.gcf()}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "C:\Users\amnit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amnit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 174, in execute_code
+    exec(code, environment)
+  File "<string>", line 8, in <module>
+  File "C:\Users\amnit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\safe_libs\restricted_matplotlib.py", line 75, in __getattr__
+    raise AttributeError(f"'{name}' is not allowed in RestrictedMatplotlib")
+AttributeError: 'gcf' is not allowed in RestrictedMatplotlib
+
+
+Fix the python code above and return the new python code:
+            
+2025-06-12 12:55:09 [INFO] Code generated:
+            ```
+            import matplotlib.pyplot as plt
+import pandas as pd
+import io
+import base64
+from matplotlib.figure import Figure
+
+def create_sentiment_chart(dfs):
+    sentiment_counts = dfs[0]['sentiment'].value_counts().to_dict()
+    
+    # Create a dictionary for easier handling and to avoid RestrictedMatplotlib issues
+    return sentiment_counts
+
+
+# Example usage (assuming dfs is defined elsewhere):
+# sentiment_data = create_sentiment_chart(dfs)
+# print(sentiment_data)  # Output:  A dictionary of sentiment counts
+            ```
+            
+2025-06-12 12:55:09 [INFO] Executing Step 2: CodeCleaning
+2025-06-12 12:55:09 [ERROR] Pipeline failed on step 2: Restricted library import detected: io
+2025-06-12 12:55:09 [ERROR] Pipeline failed on step 6: Restricted library import detected: io

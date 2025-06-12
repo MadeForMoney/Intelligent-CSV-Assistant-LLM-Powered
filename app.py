@@ -6,6 +6,7 @@ from pandasai import SmartDataframe
 from langchain_google_genai import ChatGoogleGenerativeAI
 import getpass
 import os
+from PIL import Image
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -38,5 +39,13 @@ if uploaded_file is not None:
         if prompt:
             with st.spinner('Generating Answer.....'):
                 st.write(dfs.chat(prompt))
+
+                image_path = os.path.join('exports', 'charts', 'temp_chart.png')
+
+                # Show image if it exists
+                if os.path.exists(image_path):
+                    image = Image.open(image_path)
+                    st.image(image, caption="Chart", use_column_width=True)
+
 
 
