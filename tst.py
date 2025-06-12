@@ -25,4 +25,6 @@ df = pd.read_excel(r"C:\Users\amnit\Downloads\titanic.csv")
 df = SmartDataframe(df, config={"llm": llm})
 
 print( df.chat('How many rows are there?'))
-#print( df.chat('What is the sum of the GDPs of the 2 happiest countries?'))
+#print( df.chat('What is the sum of the GDPs of the 2 happiest countrigites?'))
+
+#hi hello 
