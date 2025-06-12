@@ -22,6 +22,7 @@ google_api_key=os.getenv("GOOGLE_API_KEY")
 )
 
 
+keywords = ["visualize", "plot", "chart", "graph"]
 
 st.title("Data Analysis ChatBot ")
 
@@ -43,9 +44,11 @@ if uploaded_file is not None:
                 image_path = os.path.join('exports', 'charts', 'temp_chart.png')
 
                 # Show image if it exists
-                if os.path.exists(image_path):
-                    image = Image.open(image_path)
-                    st.image(image, caption="Chart", use_column_width=True)
+                if any(word in prompt.lower() for word in keywords):
+
+                    if os.path.exists(image_path):
+                        image = Image.open(image_path)
+                        st.image(image, caption="Chart", use_column_width=True)
 
 
 

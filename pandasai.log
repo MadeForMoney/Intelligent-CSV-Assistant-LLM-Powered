@@ -21630,3 +21630,682 @@ def create_sentiment_chart(dfs):
 2025-06-12 12:55:09 [INFO] Executing Step 2: CodeCleaning
 2025-06-12 12:55:09 [ERROR] Pipeline failed on step 2: Restricted library import detected: io
 2025-06-12 12:55:09 [ERROR] Pipeline failed on step 6: Restricted library import detected: io
+2025-06-12 19:51:20 [INFO] Question: How many of the passengers were adult male, adult female and children?
+2025-06-12 19:51:20 [INFO] Running PandasAI with langchain_chat-google-generative-ai LLM...
+2025-06-12 19:51:20 [INFO] Prompt ID: ed050e51-84eb-4679-b2b0-e1a60b3f8d6d
+2025-06-12 19:51:20 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-06-12 19:51:20 [INFO] Executing Step 0: ValidatePipelineInput
+2025-06-12 19:51:20 [INFO] Executing Step 1: CacheLookup
+2025-06-12 19:51:20 [INFO] Executing Step 2: PromptGeneration
+2025-06-12 19:51:20 [INFO] Using prompt: <dataframe>
+dfs[0]:891x15
+survived,pclass,sex,age,sibsp,parch,fare,embarked,class,who,adult_male,deck,embark_town,alive,alone
+1,2,male,,1,3,0.0,Q,First,child,True,,Queenstown,no,False
+0,1,male,0.92,8,1,18.0,S,Second,man,False,F,,yes,False
+1,3,female,39.0,2,4,6.8583,,Third,woman,True,C,Cherbourg,yes,True
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ How many of the passengers were adult male, adult female and children?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-06-12 19:51:20 [INFO] Executing Step 3: CodeGenerator
+2025-06-12 19:51:21 [ERROR] Pipeline failed on step 3: Invalid argument provided to Gemini: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-06-12 19:54:19 [INFO] Question: How many of the passengers were adult male, adult female and children?
+2025-06-12 19:54:19 [INFO] Running PandasAI with langchain_chat-google-generative-ai LLM...
+2025-06-12 19:54:19 [INFO] Prompt ID: cba3b947-f229-4472-802c-2a4693fd7f42
+2025-06-12 19:54:19 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-06-12 19:54:19 [INFO] Executing Step 0: ValidatePipelineInput
+2025-06-12 19:54:19 [INFO] Executing Step 1: CacheLookup
+2025-06-12 19:54:19 [INFO] Executing Step 2: PromptGeneration
+2025-06-12 19:54:19 [INFO] Using prompt: <dataframe>
+dfs[0]:891x15
+survived,pclass,sex,age,sibsp,parch,fare,embarked,class,who,adult_male,deck,embark_town,alive,alone
+0,2,male,58.0,4,2,83.1583,,First,man,True,G,Southampton,yes,False
+1,3,female,30.5,5,0,16.0,S,Second,child,True,,Queenstown,no,True
+0,1,male,,2,6,106.425,C,Third,woman,False,C,,yes,True
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ How many of the passengers were adult male, adult female and children?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-06-12 19:54:19 [INFO] Executing Step 3: CodeGenerator
+2025-06-12 19:54:21 [ERROR] Pipeline failed on step 3: Invalid argument provided to Gemini: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-06-12 19:54:29 [INFO] Question: How many of the passengers were adult male, adult female and children?
+2025-06-12 19:54:29 [INFO] Running PandasAI with langchain_chat-google-generative-ai LLM...
+2025-06-12 19:54:29 [INFO] Prompt ID: 3269345e-bde8-4e31-9573-bd57befec6f7
+2025-06-12 19:54:29 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-06-12 19:54:29 [INFO] Executing Step 0: ValidatePipelineInput
+2025-06-12 19:54:29 [INFO] Executing Step 1: CacheLookup
+2025-06-12 19:54:29 [INFO] Executing Step 2: PromptGeneration
+2025-06-12 19:54:29 [INFO] Using prompt: <dataframe>
+dfs[0]:891x15
+survived,pclass,sex,age,sibsp,parch,fare,embarked,class,who,adult_male,deck,embark_town,alive,alone
+1,2,male,53.0,2,1,15.2458,C,Second,child,True,G,Queenstown,yes,True
+0,3,male,,1,2,61.3792,S,First,man,True,E,Cherbourg,no,False
+0,1,female,37.0,3,0,13.8583,,Third,woman,False,,,yes,False
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ How many of the passengers were adult male, adult female and children?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-06-12 19:54:29 [INFO] Executing Step 3: CodeGenerator
+2025-06-12 19:54:31 [ERROR] Pipeline failed on step 3: Invalid argument provided to Gemini: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-06-12 19:59:03 [INFO] Question: tell me how many adult male , adult female and children were present?
+2025-06-12 19:59:03 [INFO] Running PandasAI with langchain_chat-google-generative-ai LLM...
+2025-06-12 19:59:03 [INFO] Prompt ID: 02938f92-6008-4b6e-9f91-33ae12c23bc3
+2025-06-12 19:59:03 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-06-12 19:59:03 [INFO] Executing Step 0: ValidatePipelineInput
+2025-06-12 19:59:03 [INFO] Executing Step 1: CacheLookup
+2025-06-12 19:59:03 [INFO] Executing Step 2: PromptGeneration
+2025-06-12 19:59:03 [INFO] Using prompt: <dataframe>
+dfs[0]:891x15
+survived,pclass,sex,age,sibsp,parch,fare,embarked,class,who,adult_male,deck,embark_town,alive,alone
+1,3,female,,0,5,8.3,S,Second,woman,False,B,,yes,False
+1,1,male,65.0,1,6,13.0,,Third,child,False,D,Queenstown,no,True
+0,2,female,2.0,8,4,7.775,C,First,man,True,,Southampton,no,True
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ tell me how many adult male , adult female and children were present?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-06-12 19:59:03 [INFO] Executing Step 3: CodeGenerator
+2025-06-12 19:59:05 [INFO] Prompt used:
+            
+<dataframe>
+dfs[0]:891x15
+survived,pclass,sex,age,sibsp,parch,fare,embarked,class,who,adult_male,deck,embark_town,alive,alone
+1,3,female,,0,5,8.3,S,Second,woman,False,B,,yes,False
+1,1,male,65.0,1,6,13.0,,Third,child,False,D,Queenstown,no,True
+0,2,female,2.0,8,4,7.775,C,First,man,True,,Southampton,no,True
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ tell me how many adult male , adult female and children were present?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2025-06-12 19:59:05 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+df = dfs[0]
+adult_males = len(df[(df['adult_male'] == True)])
+adult_females = len(df[(df['adult_male'] == False) & (df['who'] == 'woman')])
+children = len(df[df['who'] == 'child'])
+
+# Declare result var: 
+result = {
+    "type": "string",
+    "value": f"Adult males: {adult_males}, Adult females: {adult_females}, Children: {children}"
+}
+            ```
+            
+2025-06-12 19:59:05 [INFO] Executing Step 4: CachePopulation
+2025-06-12 19:59:05 [INFO] Executing Step 5: CodeCleaning
+2025-06-12 19:59:05 [INFO] 
+Code running:
+```
+df = dfs[0]
+adult_males = len(df[df['adult_male'] == True])
+adult_females = len(df[(df['adult_male'] == False) & (df['who'] == 'woman')])
+children = len(df[df['who'] == 'child'])
+result = {'type': 'string', 'value': f'Adult males: {adult_males}, Adult females: {adult_females}, Children: {children}'}
+        ```
+2025-06-12 19:59:05 [INFO] Executing Step 6: CodeExecution
+2025-06-12 19:59:05 [INFO] Executing Step 7: ResultValidation
+2025-06-12 19:59:05 [INFO] Answer: {'type': 'string', 'value': 'Adult males: 537, Adult females: 271, Children: 83'}
+2025-06-12 19:59:05 [INFO] Executing Step 8: ResultParsing
+2025-06-12 19:59:39 [INFO] Question: create me a suitable graph to visualize how many adult male , adult female and children were present?
+2025-06-12 19:59:39 [INFO] Running PandasAI with langchain_chat-google-generative-ai LLM...
+2025-06-12 19:59:39 [INFO] Prompt ID: fb1098dc-36bf-4ab7-abd8-3675dbf720a5
+2025-06-12 19:59:39 [INFO] Executing Pipeline: GenerateChatPipeline
+2025-06-12 19:59:39 [INFO] Executing Step 0: ValidatePipelineInput
+2025-06-12 19:59:39 [INFO] Executing Step 1: CacheLookup
+2025-06-12 19:59:39 [INFO] Executing Step 2: PromptGeneration
+2025-06-12 19:59:39 [INFO] Using prompt: <dataframe>
+dfs[0]:891x15
+survived,pclass,sex,age,sibsp,parch,fare,embarked,class,who,adult_male,deck,embark_town,alive,alone
+1,1,female,44.0,1,0,17.4,,Third,child,False,G,Cherbourg,no,False
+1,2,male,0.83,0,2,29.125,Q,Second,woman,False,,,yes,True
+0,3,female,,4,1,33.5,S,First,man,True,F,Southampton,yes,False
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ create me a suitable graph to visualize how many adult male , adult female and children were present?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2025-06-12 19:59:39 [INFO] Executing Step 3: CodeGenerator
+2025-06-12 19:59:43 [INFO] Prompt used:
+            
+<dataframe>
+dfs[0]:891x15
+survived,pclass,sex,age,sibsp,parch,fare,embarked,class,who,adult_male,deck,embark_town,alive,alone
+1,1,female,44.0,1,0,17.4,,Third,child,False,G,Cherbourg,no,False
+1,2,male,0.83,0,2,29.125,Q,Second,woman,False,,,yes,True
+0,3,female,,4,1,33.5,S,First,man,True,F,Southampton,yes,False
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ create me a suitable graph to visualize how many adult male , adult female and children were present?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2025-06-12 19:59:43 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Write code here
+df = dfs[0]
+# Count the number of adult males, adult females, and children
+adult_males = len(df[(df['adult_male'] == True)])
+adult_females = len(df[(df['adult_male'] == False) & (df['who'] == 'woman')])
+children = len(df[df['who'] == 'child'])
+
+
+# Create a bar chart
+labels = ['Adult Males', 'Adult Females', 'Children']
+counts = [adult_males, adult_females, children]
+
+plt.figure(figsize=(8, 6))  # Adjust figure size if needed
+plt.bar(labels, counts, color=['skyblue', 'lightcoral', 'lightgreen'])
+plt.title('Number of Adult Males, Adult Females, and Children')
+plt.ylabel('Count')
+plt.xlabel('Category')
+plt.savefig('passenger_count.png')
+
+# Declare result var: 
+result = { "type": "plot", "value": "passenger_count.png" }
+            ```
+            
+2025-06-12 19:59:43 [INFO] Executing Step 4: CachePopulation
+2025-06-12 19:59:43 [INFO] Executing Step 5: CodeCleaning
+2025-06-12 19:59:43 [INFO] Saving charts to C:\Projects\Pandas AI\exports\charts\temp_chart.png
+2025-06-12 19:59:43 [INFO] 
+Code running:
+```
+df = dfs[0]
+adult_males = len(df[df['adult_male'] == True])
+adult_females = len(df[(df['adult_male'] == False) & (df['who'] == 'woman')])
+children = len(df[df['who'] == 'child'])
+labels = ['Adult Males', 'Adult Females', 'Children']
+counts = [adult_males, adult_females, children]
+plt.figure(figsize=(8, 6))
+plt.bar(labels, counts, color=['skyblue', 'lightcoral', 'lightgreen'])
+plt.title('Number of Adult Males, Adult Females, and Children')
+plt.ylabel('Count')
+plt.xlabel('Category')
+plt.savefig('C:/Projects/Pandas AI/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': 'C:/Projects/Pandas AI/exports/charts/temp_chart.png'}
+        ```
+2025-06-12 19:59:43 [INFO] Executing Step 6: CodeExecution
+2025-06-12 19:59:43 [ERROR] Failed with error: Traceback (most recent call last):
+  File "C:\Users\amnit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 97, in execute
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Value type <class 'str'> must match with type plot
+
+2025-06-12 19:59:43 [WARNING] Failed to execute code retrying with a correction framework [retry number: 1]
+2025-06-12 19:59:43 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2025-06-12 19:59:43 [INFO] Executing Step 0: ErrorPromptGeneration
+2025-06-12 19:59:43 [INFO] Using prompt: <dataframe>
+dfs[0]:891x15
+survived,pclass,sex,age,sibsp,parch,fare,embarked,class,who,adult_male,deck,embark_town,alive,alone
+1,1,female,44.0,1,0,17.4,,Third,child,False,G,Cherbourg,no,False
+1,2,male,0.83,0,2,29.125,Q,Second,woman,False,,,yes,True
+0,3,female,,4,1,33.5,S,First,man,True,F,Southampton,yes,False
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ create me a suitable graph to visualize how many adult male , adult female and children were present?
+
+You generated this python code:
+df = dfs[0]
+adult_males = len(df[df['adult_male'] == True])
+adult_females = len(df[(df['adult_male'] == False) & (df['who'] == 'woman')])
+children = len(df[df['who'] == 'child'])
+labels = ['Adult Males', 'Adult Females', 'Children']
+counts = [adult_males, adult_females, children]
+plt.figure(figsize=(8, 6))
+plt.bar(labels, counts, color=['skyblue', 'lightcoral', 'lightgreen'])
+plt.title('Number of Adult Males, Adult Females, and Children')
+plt.ylabel('Count')
+plt.xlabel('Category')
+plt.savefig('C:/Projects/Pandas AI/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': 'C:/Projects/Pandas AI/exports/charts/temp_chart.png'}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "C:\Users\amnit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 97, in execute
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Value type <class 'str'> must match with type plot
+
+
+Fix the python code above and return the new python code:
+2025-06-12 19:59:43 [INFO] Executing Step 1: CodeGenerator
+2025-06-12 19:59:46 [INFO] Prompt used:
+            
+<dataframe>
+dfs[0]:891x15
+survived,pclass,sex,age,sibsp,parch,fare,embarked,class,who,adult_male,deck,embark_town,alive,alone
+1,1,female,44.0,1,0,17.4,,Third,child,False,G,Cherbourg,no,False
+1,2,male,0.83,0,2,29.125,Q,Second,woman,False,,,yes,True
+0,3,female,,4,1,33.5,S,First,man,True,F,Southampton,yes,False
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ create me a suitable graph to visualize how many adult male , adult female and children were present?
+
+You generated this python code:
+df = dfs[0]
+adult_males = len(df[df['adult_male'] == True])
+adult_females = len(df[(df['adult_male'] == False) & (df['who'] == 'woman')])
+children = len(df[df['who'] == 'child'])
+labels = ['Adult Males', 'Adult Females', 'Children']
+counts = [adult_males, adult_females, children]
+plt.figure(figsize=(8, 6))
+plt.bar(labels, counts, color=['skyblue', 'lightcoral', 'lightgreen'])
+plt.title('Number of Adult Males, Adult Females, and Children')
+plt.ylabel('Count')
+plt.xlabel('Category')
+plt.savefig('C:/Projects/Pandas AI/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': 'C:/Projects/Pandas AI/exports/charts/temp_chart.png'}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "C:\Users\amnit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 97, in execute
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Value type <class 'str'> must match with type plot
+
+
+Fix the python code above and return the new python code:
+            
+2025-06-12 19:59:46 [INFO] Code generated:
+            ```
+            import matplotlib.pyplot as plt
+import pandas as pd
+
+df = dfs[0]
+
+#Handle potential missing columns gracefully
+try:
+    adult_males = len(df[df['adult_male'] == True])
+    adult_females = len(df[(df['adult_male'] == False) & (df['who'] == 'woman')])
+    children = len(df[df['who'] == 'child'])
+except KeyError as e:
+    print(f"Error: Column '{e.args[0]}' not found in DataFrame.")
+    plt.figure() #create a blank figure to avoid error
+    plt.text(0.5, 0.5, "Error: Missing required column", ha='center', va='center')
+    plt.show()
+    exit() # or raise the exception if you prefer to stop execution
+
+
+labels = ['Adult Males', 'Adult Females', 'Children']
+counts = [adult_males, adult_females, children]
+
+plt.figure(figsize=(8, 6))
+plt.bar(labels, counts, color=['skyblue', 'lightcoral', 'lightgreen'])
+plt.title('Number of Adult Males, Adult Females, and Children')
+plt.ylabel('Count')
+plt.xlabel('Category')
+
+#Return the plot object directly
+result = {'type': 'plot', 'value': plt}
+            ```
+            
+2025-06-12 19:59:46 [INFO] Executing Step 2: CodeCleaning
+2025-06-12 19:59:46 [INFO] 
+Code running:
+```
+df = dfs[0]
+try:
+    adult_males = len(df[df['adult_male'] == True])
+    adult_females = len(df[(df['adult_male'] == False) & (df['who'] == 'woman')])
+    children = len(df[df['who'] == 'child'])
+except KeyError as e:
+    print(f"Error: Column '{e.args[0]}' not found in DataFrame.")
+    plt.figure()
+    plt.text(0.5, 0.5, 'Error: Missing required column', ha='center', va='center')
+    exit()
+labels = ['Adult Males', 'Adult Females', 'Children']
+counts = [adult_males, adult_females, children]
+plt.figure(figsize=(8, 6))
+plt.bar(labels, counts, color=['skyblue', 'lightcoral', 'lightgreen'])
+plt.title('Number of Adult Males, Adult Females, and Children')
+plt.ylabel('Count')
+plt.xlabel('Category')
+result = {'type': 'plot', 'value': plt}
+        ```
+2025-06-12 19:59:46 [ERROR] Failed with error: Traceback (most recent call last):
+  File "C:\Users\amnit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 97, in execute
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Value type <class 'pandasai.safe_libs.restricted_matplotlib.RestrictedMatplotlib'> must match with type plot
+
+2025-06-12 19:59:46 [WARNING] Failed to execute code retrying with a correction framework [retry number: 2]
+2025-06-12 19:59:46 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2025-06-12 19:59:46 [INFO] Executing Step 0: ErrorPromptGeneration
+2025-06-12 19:59:46 [INFO] Using prompt: <dataframe>
+dfs[0]:891x15
+survived,pclass,sex,age,sibsp,parch,fare,embarked,class,who,adult_male,deck,embark_town,alive,alone
+1,1,female,44.0,1,0,17.4,,Third,child,False,G,Cherbourg,no,False
+1,2,male,0.83,0,2,29.125,Q,Second,woman,False,,,yes,True
+0,3,female,,4,1,33.5,S,First,man,True,F,Southampton,yes,False
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ create me a suitable graph to visualize how many adult male , adult female and children were present?
+
+You generated this python code:
+df = dfs[0]
+try:
+    adult_males = len(df[df['adult_male'] == True])
+    adult_females = len(df[(df['adult_male'] == False) & (df['who'] == 'woman')])
+    children = len(df[df['who'] == 'child'])
+except KeyError as e:
+    print(f"Error: Column '{e.args[0]}' not found in DataFrame.")
+    plt.figure()
+    plt.text(0.5, 0.5, 'Error: Missing required column', ha='center', va='center')
+    exit()
+labels = ['Adult Males', 'Adult Females', 'Children']
+counts = [adult_males, adult_females, children]
+plt.figure(figsize=(8, 6))
+plt.bar(labels, counts, color=['skyblue', 'lightcoral', 'lightgreen'])
+plt.title('Number of Adult Males, Adult Females, and Children')
+plt.ylabel('Count')
+plt.xlabel('Category')
+result = {'type': 'plot', 'value': plt}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "C:\Users\amnit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 97, in execute
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Value type <class 'pandasai.safe_libs.restricted_matplotlib.RestrictedMatplotlib'> must match with type plot
+
+
+Fix the python code above and return the new python code:
+2025-06-12 19:59:46 [INFO] Executing Step 1: CodeGenerator
+2025-06-12 19:59:50 [INFO] Prompt used:
+            
+<dataframe>
+dfs[0]:891x15
+survived,pclass,sex,age,sibsp,parch,fare,embarked,class,who,adult_male,deck,embark_town,alive,alone
+1,1,female,44.0,1,0,17.4,,Third,child,False,G,Cherbourg,no,False
+1,2,male,0.83,0,2,29.125,Q,Second,woman,False,,,yes,True
+0,3,female,,4,1,33.5,S,First,man,True,F,Southampton,yes,False
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ create me a suitable graph to visualize how many adult male , adult female and children were present?
+
+You generated this python code:
+df = dfs[0]
+try:
+    adult_males = len(df[df['adult_male'] == True])
+    adult_females = len(df[(df['adult_male'] == False) & (df['who'] == 'woman')])
+    children = len(df[df['who'] == 'child'])
+except KeyError as e:
+    print(f"Error: Column '{e.args[0]}' not found in DataFrame.")
+    plt.figure()
+    plt.text(0.5, 0.5, 'Error: Missing required column', ha='center', va='center')
+    exit()
+labels = ['Adult Males', 'Adult Females', 'Children']
+counts = [adult_males, adult_females, children]
+plt.figure(figsize=(8, 6))
+plt.bar(labels, counts, color=['skyblue', 'lightcoral', 'lightgreen'])
+plt.title('Number of Adult Males, Adult Females, and Children')
+plt.ylabel('Count')
+plt.xlabel('Category')
+result = {'type': 'plot', 'value': plt}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "C:\Users\amnit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 97, in execute
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Value type <class 'pandasai.safe_libs.restricted_matplotlib.RestrictedMatplotlib'> must match with type plot
+
+
+Fix the python code above and return the new python code:
+            
+2025-06-12 19:59:50 [INFO] Code generated:
+            ```
+            import matplotlib.pyplot as plt
+import os
+
+df = dfs[0]
+try:
+    adult_males = len(df[df['adult_male'] == True])
+    adult_females = len(df[(df['adult_male'] == False) & (df['who'] == 'woman')])
+    children = len(df[df['who'] == 'child'])
+except KeyError as e:
+    print(f"Error: Column '{e.args[0]}' not found in DataFrame.")
+    plt.figure()
+    plt.text(0.5, 0.5, 'Error: Missing required column', ha='center', va='center')
+    plt.savefig('error_plot.png') #save the error plot
+    result = {'type': 'plot', 'value': 'error_plot.png'}
+    exit()
+
+labels = ['Adult Males', 'Adult Females', 'Children']
+counts = [adult_males, adult_females, children]
+plt.figure(figsize=(8, 6))
+plt.bar(labels, counts, color=['skyblue', 'lightcoral', 'lightgreen'])
+plt.title('Number of Adult Males, Adult Females, and Children')
+plt.ylabel('Count')
+plt.xlabel('Category')
+
+# Save the plot to a file
+plot_filename = 'gender_age_distribution.png'
+plt.savefig(plot_filename)
+plt.close() #close the plot to free memory
+
+result = {'type': 'plot', 'value': plot_filename}
+            ```
+            
+2025-06-12 19:59:50 [INFO] Executing Step 2: CodeCleaning
+2025-06-12 19:59:50 [ERROR] Pipeline failed on step 2: Restricted library import detected: os
+2025-06-12 19:59:50 [ERROR] Pipeline failed on step 6: Restricted library import detected: os
